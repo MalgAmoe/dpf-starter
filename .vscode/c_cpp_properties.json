@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/thirdparty/dpf/distrho",
+                "${workspaceFolder}/thirdparty/dpf/dgl",
+                "${workspaceFolder}/thirdparty/dpf/dgl/src/pugl-upstream/include",
+                "${workspaceFolder}/plugins/TanDist",
+                "${workspaceFolder}/thirdparty/visage",
+                "${workspaceFolder}/thirdparty/visage/build/include",
+                "${workspaceFolder}/thirdparty/visage/build/visage_graphics/VisageEmbeddedFonts_generated",
+                "${workspaceFolder}/thirdparty/visage/visage_file_embed",
+                "/usr/include/dbus-1.0",
+                "/usr/lib/x86_64-linux-gnu/dbus-1.0/include"
+            ],
+            "defines": [
+                "HAVE_ALSA",
+                "HAVE_JACK",
+                "HAVE_PULSEAUDIO",
+                "HAVE_RTAUDIO",
+                "HAVE_SDL2",
+                "HAVE_DBUS",
+                "HAVE_X11",
+                "HAVE_XCURSOR",
+                "HAVE_XEXT",
+                "HAVE_XSYNC",
+                "HAVE_XRANDR",
+                "HAVE_CAIRO",
+                "HAVE_OPENGL",
+                "NDEBUG"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu99",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

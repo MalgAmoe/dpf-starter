@@ -1,3 +1,6 @@
-[submodule "dpf"]
-	path = dpf
+[submodule "thirdparty/visage"]
+	path = thirdparty/visage
+	url = https://github.com/VitalAudio/visage.git
+[submodule "thirdparty/dpf"]
+	path = thirdparty/dpf
 	url = https://github.com/DISTRHO/DPF

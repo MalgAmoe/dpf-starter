@@ -1,5 +1,6 @@
 #include "DistrhoPlugin.hpp"
 #include "DistrhoPluginInfo.h"
+#include "TanDistParameters.h"
 #include <cstdint>
 #include "math.h"
 
@@ -21,11 +22,11 @@ protected:
   void initParameter(uint32_t index, Parameter& parameter) override {
     switch (index) {
     case kGain:
-      parameter.name = "Gain";
-      parameter.symbol = "gain";
-      parameter.ranges.def = 1.0f;
-      parameter.ranges.min = 1.0f;
-      parameter.ranges.max = 10.0f;
+      parameter.name = TanDistParams::kGainName;
+      parameter.symbol = TanDistParams::kGainSymbol;
+      parameter.ranges.def = TanDistParams::kGainDefault;
+      parameter.ranges.min = TanDistParams::kGainMin;
+      parameter.ranges.max = TanDistParams::kGainMax;
       parameter.hints = kParameterIsAutomatable;
       break;
     default:

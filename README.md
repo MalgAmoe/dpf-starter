@@ -17,7 +17,7 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
 cd ../../..
 
-# configure project
+# configure project, for release add this after: -DCMAKE_BUILD_TYPE=Release
 cmake -B build-cmake
 
 # build the clap plugin
